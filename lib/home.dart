@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:plant_App/listview.dart';
+import 'package:plant_App/listview2.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -135,9 +136,9 @@ class HomePage extends StatelessWidget {
               ),
             ),
             Container(
-              height: size.height * 0.3,
-              margin: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
-              child: FirstList(),
+              height: size.height * 0.33,
+              margin: EdgeInsets.symmetric(horizontal: 10,),
+              child: FirstList(size:size.height*0.3),
             ),
             Container(
               height: 40,
@@ -166,7 +167,12 @@ class HomePage extends StatelessWidget {
                   )
                 ],
               ),
-            )
+            ),
+             Container(
+              height: size.height * 0.33,
+              margin: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+              child: SecondList(size:size.height*0.3),
+            ),
           ],
         ),
       ),

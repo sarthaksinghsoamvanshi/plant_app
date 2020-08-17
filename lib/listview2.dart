@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class FirstList extends StatelessWidget {
+class SecondList extends StatelessWidget {
   final size;
 
-  const FirstList({this.size});
+  const SecondList({this.size});
   @override
   Widget build(BuildContext context) {
     var plants = [
@@ -43,7 +43,7 @@ class FirstList extends StatelessWidget {
               color: Colors.blue,
             ),
             margin: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-            width: 200,
+            width: 280,
             child: Column(
               children: [
                 Container(
