@@ -13,6 +13,14 @@ class HomePage extends StatelessWidget {
         leading: IconButton(
             icon: Icon(Icons.menu, color: colw, size: 25), onPressed: null),
       ),
+      bottomNavigationBar: Container(
+        color: Colors.white,
+        height: 50,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [Icon(Icons.home,color: colg,),Icon(Icons.favorite,color: colg,),Icon(Icons.person,color: colg,)],
+        ),
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -86,10 +94,30 @@ class HomePage extends StatelessWidget {
             ),
             Container(
               height: 40,
-              margin: EdgeInsets.symmetric(horizontal:20),
+              margin: EdgeInsets.symmetric(horizontal: 20),
               // color: Colors.amber,
               child: Row(
-                children: [Text("Recommended",style:TextStyle(color:colg,fontSize:25,fontWeight: FontWeight.bold))],
+                children: [
+                  Text("Recommended",
+                      style: TextStyle(
+                          color: colg,
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold))
+                ],
+              ),
+            ),
+            Container(
+              height: 40,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              // color: Colors.amber,
+              child: Row(
+                children: [
+                  Text("Featured Plants",
+                      style: TextStyle(
+                          color: colg,
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold))
+                ],
               ),
             )
           ],
