@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plant_App/listview.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -18,7 +19,20 @@ class HomePage extends StatelessWidget {
         height: 50,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [Icon(Icons.home,color: colg,),Icon(Icons.favorite,color: colg,),Icon(Icons.person,color: colg,)],
+          children: [
+            Icon(
+              Icons.home,
+              color: colg,
+            ),
+            Icon(
+              Icons.favorite,
+              color: colg,
+            ),
+            Icon(
+              Icons.person,
+              color: colg,
+            )
+          ],
         ),
       ),
       body: SingleChildScrollView(
@@ -98,25 +112,58 @@ class HomePage extends StatelessWidget {
               // color: Colors.amber,
               child: Row(
                 children: [
-                  Text("Recommended",
-                      style: TextStyle(
-                          color: colg,
-                          fontSize: 25,
-                          fontWeight: FontWeight.bold))
+                  Text(
+                    "Recommended",
+                    style: TextStyle(
+                        color: colg, fontSize: 25, fontWeight: FontWeight.bold),
+                  ),
+                  Spacer(),
+                  FlatButton(
+                    onPressed: () {},
+                    child: Text(
+                      "More",
+                      style: TextStyle(color: colw),
+                    ),
+                    color: Colors.green,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(20),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
             Container(
+              height: size.height * 0.3,
+              margin: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+              child: FirstList(),
+            ),
+            Container(
               height: 40,
               margin: EdgeInsets.symmetric(horizontal: 20),
-              // color: Colors.amber,
+              // padding: EdgeInsets.symmetric(horizontal:10),
               child: Row(
                 children: [
                   Text("Featured Plants",
                       style: TextStyle(
                           color: colg,
                           fontSize: 25,
-                          fontWeight: FontWeight.bold))
+                          fontWeight: FontWeight.bold)),
+                  Spacer(),
+                  FlatButton(
+                    onPressed: (){},
+                    child: Text(
+                      "More",
+                      style: TextStyle(color: colw),
+                    ),
+                    color: colg,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(20),
+                      ),
+                    ),
+                  )
                 ],
               ),
             )
