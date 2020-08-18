@@ -168,11 +168,11 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-             Container(
-              height: size.height * 0.33,
-              margin: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
-              child: SecondList(size:size.height*0.3),
-            ),
+            //  Container(
+            //   height: size.height * 0.33,
+            //   margin: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+            //   child: SecondList(size:size.height*0.3),
+            // ),
           ],
         ),
       ),
