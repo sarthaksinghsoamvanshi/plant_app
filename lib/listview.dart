@@ -8,6 +8,12 @@ class FirstList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var plants = [
+       {
+        "plant": "Sinague plant",
+        "image": "images/f.png",
+        "price": 145,
+        "country": "russia"
+      },
       {
         "plant": "Moneyplant",
         "image": "images/b.png",

@@ -19,7 +19,7 @@ class DetailPage extends StatelessWidget {
           child: Column(
             children: <Widget>[
               SizedBox(
-                height: 600,
+                height: 550,
                 child: Row(
                   children: [
                     Expanded(
@@ -106,9 +106,7 @@ class DetailPage extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      // padding: EdgeInsets.all(10),
                       margin: EdgeInsets.only(left: 10, bottom: 20),
-                      height: 600,
                       width: size.width * 0.7,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.only(
@@ -123,7 +121,9 @@ class DetailPage extends StatelessWidget {
                         ],
                         color: Colors.amber,
                         image: DecorationImage(
-                            image: AssetImage(image), fit: BoxFit.cover),
+                            alignment: Alignment.centerLeft,
+                            image: AssetImage(image),
+                            fit: BoxFit.cover),
                       ),
                     ),
                   ],
