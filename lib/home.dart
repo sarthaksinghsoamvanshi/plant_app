@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:plant_App/listview.dart';
 import 'package:plant_App/listview2.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -12,10 +13,10 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: colg,
         elevation: 0,
-        leading: IconButton(
-            icon: Icon(Icons.menu, color: colw, size: 25), onPressed: null),
+        leading: FlatButton(
+            child: SvgPicture.asset("icons/menu.svg"), onPressed: null),
       ),
-      bottomNavigationBar: Container(
+       bottomNavigationBar: Container(
         color: Colors.white,
         height: 50,
         child: Row(
@@ -27,11 +28,11 @@ class HomePage extends StatelessWidget {
             ),
             Icon(
               Icons.favorite,
-              color: colg,
+              color: Colors.grey,
             ),
             Icon(
               Icons.person,
-              color: colg,
+              color: Colors.grey,
             )
           ],
         ),
@@ -137,8 +138,10 @@ class HomePage extends StatelessWidget {
             ),
             Container(
               height: size.height * 0.33,
-              margin: EdgeInsets.symmetric(horizontal: 10,),
-              child: FirstList(size:size.height*0.3),
+              margin: EdgeInsets.symmetric(
+                horizontal: 10,
+              ),
+              child: FirstList(size: size.height * 0.3),
             ),
             Container(
               height: 40,
@@ -153,7 +156,7 @@ class HomePage extends StatelessWidget {
                           fontWeight: FontWeight.bold)),
                   Spacer(),
                   FlatButton(
-                    onPressed: (){},
+                    onPressed: () {},
                     child: Text(
                       "More",
                       style: TextStyle(color: colw),
@@ -168,11 +171,11 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-            //  Container(
-            //   height: size.height * 0.33,
-            //   margin: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
-            //   child: SecondList(size:size.height*0.3),
-            // ),
+            Container(
+              height: size.height * 0.33,
+              margin: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+              child: SecondList(size: size.height * 0.3),
+            ),
           ],
         ),
       ),

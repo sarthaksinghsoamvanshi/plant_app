@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class DetailPage extends StatelessWidget {
   final image;
@@ -23,7 +24,7 @@ class DetailPage extends StatelessWidget {
                   children: [
                     Expanded(
                       child: Padding(
-                        padding: const EdgeInsets.only(top: 20),
+                        padding: const EdgeInsets.symmetric(vertical: 20),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: <Widget>[
@@ -49,7 +50,24 @@ class DetailPage extends StatelessWidget {
                                         color: Colors.grey)
                                   ],
                                   borderRadius: BorderRadius.circular(6)),
-                              // child: SvgPicture.asset("");
+                              child: SvgPicture.asset("icons/sun.svg"),
+                            ),
+
+                            Container(
+                              height: 60,
+                              width: 60,
+                              alignment: Alignment.center,
+                              margin: EdgeInsets.symmetric(vertical: 10),
+                              decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  boxShadow: [
+                                    BoxShadow(
+                                        blurRadius: 10,
+                                        offset: Offset(0, 10),
+                                        color: Colors.grey)
+                                  ],
+                                  borderRadius: BorderRadius.circular(6)),
+                              child: SvgPicture.asset("icons/icon_2.svg"),
                             ),
                             Container(
                               height: 60,
@@ -65,7 +83,7 @@ class DetailPage extends StatelessWidget {
                                         color: Colors.grey)
                                   ],
                                   borderRadius: BorderRadius.circular(6)),
-                              // child: SvgPicture.asset("");
+                              child: SvgPicture.asset("icons/icon_3.svg"),
                             ),
                             Container(
                               height: 60,
@@ -81,39 +99,7 @@ class DetailPage extends StatelessWidget {
                                         color: Colors.grey)
                                   ],
                                   borderRadius: BorderRadius.circular(6)),
-                              // child: SvgPicture.asset("");
-                            ),
-                            Container(
-                              height: 60,
-                              width: 60,
-                              alignment: Alignment.center,
-                              margin: EdgeInsets.symmetric(vertical: 10),
-                              decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  boxShadow: [
-                                    BoxShadow(
-                                        blurRadius: 10,
-                                        offset: Offset(0, 10),
-                                        color: Colors.grey)
-                                  ],
-                                  borderRadius: BorderRadius.circular(6)),
-                              // child: SvgPicture.asset("");
-                            ),
-                            Container(
-                              height: 60,
-                              width: 60,
-                              alignment: Alignment.center,
-                              margin: EdgeInsets.symmetric(vertical: 10),
-                              decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  boxShadow: [
-                                    BoxShadow(
-                                        blurRadius: 10,
-                                        offset: Offset(0, 10),
-                                        color: Colors.grey)
-                                  ],
-                                  borderRadius: BorderRadius.circular(6)),
-                              // child: SvgPicture.asset("");
+                              child: SvgPicture.asset("icons/icon_4.svg"),
                             ),
                           ],
                         ),
