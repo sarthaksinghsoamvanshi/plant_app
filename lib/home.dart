@@ -7,8 +7,8 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    var colg = Colors.green;
-    var colw = Colors.white;
+    var colg = Colors.amber;
+    var colw = Colors.blue;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: colg,
